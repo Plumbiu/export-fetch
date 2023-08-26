@@ -8,7 +8,9 @@
 
 ## Installing
 
+```bash
 npm i export-fetch -D
+```
 
 ## Config
 

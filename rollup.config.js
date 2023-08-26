@@ -1,16 +1,11 @@
-import { nodeResolve } from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
-import exportFetch from './src/index.js'
+import terser from '@rollup/plugin-terser'
 
 export default {
-	input: 'src/test/index.ts',
+	input: 'src/index.ts',
 	output: {
 		dir: 'dist',
 		format: 'es',
 	},
-	plugins: [
-		nodeResolve(),
-		typescript(),
-		exportFetch()
-	],
+	plugins: [terser(), typescript()],
 }

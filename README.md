@@ -9,14 +9,14 @@
 ## Installing
 
 ```bash
-npm i export-fetch -D
+npm i rollup-export-fetch -D
 ```
 
 ## Config
 
 ```js
 // rollup.config.js
-import ef from 'export-fetch'
+import ef from 'rollup-export-fetch'
 
 export default {
   plugins: [
